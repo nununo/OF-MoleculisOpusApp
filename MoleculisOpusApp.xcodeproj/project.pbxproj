@@ -11,6 +11,8 @@
 		51311032AF6D46EB9144F0C7 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27E603A09371D4F201E7AB74 /* tinyxmlparser.cpp */; };
 		57514656C6121DBD7B1B5F1E /* ofxXmlSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77B6A122F59697CD3D883DA2 /* ofxXmlSettings.cpp */; };
 		78263DB7A06E5E0226C873CE /* ofxPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1FEB66CE88C2B47C1925F8C /* ofxPanel.cpp */; };
+		7DD8223A1C9C8A350095581B /* SSMClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DD822381C9C8A350095581B /* SSMClient.cpp */; };
+		7DD822401C9C8CFC0095581B /* stdsoap2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DD8223E1C9C8CFC0095581B /* stdsoap2.cpp */; };
 		7F8CE38CEA7B29A08FB87974 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7876E8AE07A41B33AD46E /* tinyxml.cpp */; };
 		8E4803896B3157AE8ADCB02E /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC825A4168A0DF78F0ACE6A7 /* tinyxmlerror.cpp */; };
 		A0DD88127445464D69B7224E /* ofxGuiGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CE452C77AF7B96205848C7E /* ofxGuiGroup.cpp */; };
@@ -65,6 +67,12 @@
 		4AA7876E8AE07A41B33AD46E /* tinyxml.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = tinyxml.cpp; path = ../../of_v0.9.3_osx_release/addons/ofxXmlSettings/libs/tinyxml.cpp; sourceTree = SOURCE_ROOT; };
 		77B6A122F59697CD3D883DA2 /* ofxXmlSettings.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxXmlSettings.cpp; path = ../../of_v0.9.3_osx_release/addons/ofxXmlSettings/src/ofxXmlSettings.cpp; sourceTree = SOURCE_ROOT; };
 		7CE452C77AF7B96205848C7E /* ofxGuiGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxGuiGroup.cpp; path = ../../of_v0.9.3_osx_release/addons/ofxGui/src/ofxGuiGroup.cpp; sourceTree = SOURCE_ROOT; };
+		7DD822381C9C8A350095581B /* SSMClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SSMClient.cpp; sourceTree = "<group>"; };
+		7DD822391C9C8A350095581B /* SSMClient.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SSMClient.hpp; sourceTree = "<group>"; };
+		7DD8223B1C9C8C530095581B /* soapzssm_USCORElistmessagesProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = soapzssm_USCORElistmessagesProxy.h; path = src/gSOAP/soapzssm_USCORElistmessagesProxy.h; sourceTree = "<group>"; };
+		7DD8223C1C9C8C530095581B /* zssm_USCORElistmessages.nsmap */ = {isa = PBXFileReference; lastKnownFileType = text; name = zssm_USCORElistmessages.nsmap; path = src/gSOAP/zssm_USCORElistmessages.nsmap; sourceTree = "<group>"; };
+		7DD8223E1C9C8CFC0095581B /* stdsoap2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stdsoap2.cpp; path = src/gSOAP/stdsoap2.cpp; sourceTree = "<group>"; };
+		7DD822411C9C8D210095581B /* stdsoap2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = stdsoap2.h; path = src/gSOAP/stdsoap2.h; sourceTree = "<group>"; };
 		8FC228FDBD8EBDF3566FFA28 /* ofxLabel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxLabel.h; path = ../../of_v0.9.3_osx_release/addons/ofxGui/src/ofxLabel.h; sourceTree = SOURCE_ROOT; };
 		9DB506652351C4E71E488395 /* tinyxml.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = tinyxml.h; path = ../../of_v0.9.3_osx_release/addons/ofxXmlSettings/libs/tinyxml.h; sourceTree = SOURCE_ROOT; };
 		A03571044EBB2DB95F16A0C2 /* ofxBaseGui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxBaseGui.cpp; path = ../../of_v0.9.3_osx_release/addons/ofxGui/src/ofxBaseGui.cpp; sourceTree = SOURCE_ROOT; };
@@ -143,6 +151,18 @@
 			name = src;
 			sourceTree = "<group>";
 		};
+		7DD822311C9C88EC0095581B /* gSOAP */ = {
+			isa = PBXGroup;
+			children = (
+				7DD822411C9C8D210095581B /* stdsoap2.h */,
+				7DD8223E1C9C8CFC0095581B /* stdsoap2.cpp */,
+				7DD8223B1C9C8C530095581B /* soapzssm_USCORElistmessagesProxy.h */,
+				7DD8223C1C9C8C530095581B /* zssm_USCORElistmessages.nsmap */,
+			);
+			name = gSOAP;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		A763ED608B35AE3310251DEE /* src */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,9 +220,12 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				7DD822311C9C88EC0095581B /* gSOAP */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+				7DD822381C9C8A350095581B /* SSMClient.cpp */,
+				7DD822391C9C8A350095581B /* SSMClient.hpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -303,10 +326,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DD8223A1C9C8A350095581B /* SSMClient.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				EB3DC41222A933534B9D7969 /* ofxBaseGui.cpp in Sources */,
 				F0A84C7C84C257206AC3EB26 /* ofxButton.cpp in Sources */,
+				7DD822401C9C8CFC0095581B /* stdsoap2.cpp in Sources */,
 				A0DD88127445464D69B7224E /* ofxGuiGroup.cpp in Sources */,
 				F339AB5F62C370C58449E370 /* ofxLabel.cpp in Sources */,
 				78263DB7A06E5E0226C873CE /* ofxPanel.cpp in Sources */,

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+  xmlns:SOAP-ENV="http://www.w3.org/2003/05/soap-envelope"
+  xmlns:SOAP-ENC="http://www.w3.org/2003/05/soap-encoding"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:ns1="urn:sap-com:document:sap:rfc:functions"
+  xmlns:chan="http://schemas.microsoft.com/ws/2005/02/duplex"
+  xmlns:wsa5="http://www.w3.org/2005/08/addressing">
+ <SOAP-ENV:Header>
+ </SOAP-ENV:Header>
+ <SOAP-ENV:Body>
+  <ns1:Z_SSM_LIST_MESSAGESResponse>
+   <MESSAGES>
+    <item>
+     <ID_ROFF></ID_ROFF>
+     <ID_SAP></ID_SAP>
+     <PARTNER></PARTNER>
+     <OBJECT_ID></OBJECT_ID>
+     <DESCRIPTION></DESCRIPTION>
+     <STATUS></STATUS>
+     <POSTING_DATE></POSTING_DATE>
+     <CLOSE_DATE></CLOSE_DATE>
+     <GUID></GUID>
+     <INCIDENT></INCIDENT>
+    </item>
+   </MESSAGES>
+   <PROJECTS>
+    <item>
+     <OBJECT_ID></OBJECT_ID>
+     <ID_ROFF></ID_ROFF>
+     <ID_PROJ_ROFF></ID_PROJ_ROFF>
+    </item>
+   </PROJECTS>
+  </ns1:Z_SSM_LIST_MESSAGESResponse>
+ </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
