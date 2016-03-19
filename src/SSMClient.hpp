@@ -11,7 +11,4 @@
 
 #include <stdio.h>
 
-#include "gSOAP/soapzssm_USCORElistmessagesProxy.h"
-#include "gSOAP/zssm_USCORElistmessages.nsmap"
-
 #endif /* SSMClient_hpp */
