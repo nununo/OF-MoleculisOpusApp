@@ -19,9 +19,11 @@ class SSMClient {
 
   
 private:
-  std::string getDate();
+  std::string getTodayDateAsString();
 public:
-  SSMClient(std::string username, std::string password);
+  SSMClient(const char *soap_endpoint,
+            const char *username,
+            const char *password);
   void fetch();
   
 };
