@@ -33,8 +33,6 @@ void SSMClient::fetch() {
   _ns1__Z_USCORESSM_USCORELIST_USCOREMESSAGESResponse response;
   
   // Input parameters
-  //listMessages->ALL = "0";
-  listMessages->DATA = "2016-04-21";
   listMessages->DATA = getTodayDateAsString();
   
   // SOAP call

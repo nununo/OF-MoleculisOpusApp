@@ -171,7 +171,7 @@ int zssm_USCORElistmessagesProxy::Z_USCORESSM_USCORELIST_USCOREMESSAGES(const ch
 	if (endpoint)
 		soap_endpoint = endpoint;
 	if (soap_endpoint == NULL)
-		soap_endpoint = "http://servicedesk.roff.pt/sap/bc/srt/rfc/sap/zssm_list_messages/100/zssm_listmessages/zssm_listmessages";
+		soap_endpoint = "http://roffcloud4.roff.pt:8001/sap/bc/srt/rfc/sap/zssm_list_messages/100/zssm_listmessages/zssm_listmessages";
 	if (soap_action == NULL)
 		soap_action = "urn:sap-com:document:sap:rfc:functions:ZSSM_LIST_MESSAGES:Z_SSM_LIST_MESSAGESRequest";
 	soap_tmp___ns1__Z_USCORESSM_USCORELIST_USCOREMESSAGES.ns1__Z_USCORESSM_USCORELIST_USCOREMESSAGES = ns1__Z_USCORESSM_USCORELIST_USCOREMESSAGES;
@@ -225,8 +225,7 @@ int zssm_USCORElistmessagesProxy::Z_USCORESSM_USCORELIST_USCOREMESSAGES_(const c
 	if (endpoint)
 		soap_endpoint = endpoint;
 	if (soap_endpoint == NULL)
-    //soap_endpoint = "http://servicedesk.roff.pt/sap/bc/srt/rfc/sap/zssm_list_messages/100/zssm_listmessages/zssm_listmessages"; //PRD
-		soap_endpoint = "http://servicedesk.roff.pt:3262/sap/bc/srt/wsdl/flv_10002A111AD1/bndg_url/sap/bc/srt/rfc/sap/zssm_list_messages/100/zssm_listmessages/zssm_listmessages?sap-client=100"; //DEV
+		soap_endpoint = "http://roffcloud4.roff.pt:8001/sap/bc/srt/rfc/sap/zssm_list_messages/100/zssm_listmessages/zssm_listmessages";
 	if (soap_action == NULL)
 		soap_action = "urn:sap-com:document:sap:rfc:functions:ZSSM_LIST_MESSAGES:Z_SSM_LIST_MESSAGESRequest";
 	soap_tmp___ns1__Z_USCORESSM_USCORELIST_USCOREMESSAGES_.ns1__Z_USCORESSM_USCORELIST_USCOREMESSAGES = ns1__Z_USCORESSM_USCORELIST_USCOREMESSAGES;
