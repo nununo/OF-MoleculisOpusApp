@@ -1,10 +1,14 @@
 #pragma once
 
 #include "ofMain.h"
+#include "SSMClient.hpp"
 
 class ofApp : public ofBaseApp{
 
-	public:
+  private:
+    SSMClient *ssmClient;
+	
+  public:
 		void setup();
 		void update();
 		void draw();

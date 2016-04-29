@@ -1,7 +1,7 @@
 #include "ofApp.h"
 
-#include "gSOAP/soapzssm_USCORElistmessagesProxy.h"
-#include "gSOAP/zssm_USCORElistmessages.nsmap"
+//#include "gSOAP/soapzssm_USCORElistmessagesProxy.h"
+//#include "gSOAP/zssm_USCORElistmessages.nsmap"
 
 //--------------------------------------------------------------
 void ofApp::setup(){
