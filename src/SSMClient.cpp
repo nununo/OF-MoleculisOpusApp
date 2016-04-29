@@ -34,6 +34,7 @@ void SSMClient::fetch() {
   
   // Input parameters
   listMessages->DATA = getTodayDateAsString();
+  listMessages->DATA = "2016-04-01";
   
   // SOAP call
   if ( ssmProxy.Z_USCORESSM_USCORELIST_USCOREMESSAGES(listMessages, response) == SOAP_OK )
