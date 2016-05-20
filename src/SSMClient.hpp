@@ -19,12 +19,12 @@ class SSMClient {
 
   
 private:
-  std::string getTodayDateAsString();
+  std::string getDateAsString(struct tm *ptm);
 public:
   SSMClient(const char *soap_endpoint,
             const char *username,
             const char *password);
-  void fetch();
+  _ns1__Z_USCORESSM_USCORELIST_USCOREMESSAGESResponse *fetch(struct tm *ptm);
   
 };
 

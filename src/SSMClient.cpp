@@ -28,28 +28,33 @@ SSMClient::SSMClient(const char *soap_endpoint,
 }
 
 //--------------------------------------------------------------
-void SSMClient::fetch() {
+_ns1__Z_USCORESSM_USCORELIST_USCOREMESSAGESResponse *SSMClient::fetch(struct tm *ptm) {
+  
   _ns1__Z_USCORESSM_USCORELIST_USCOREMESSAGES *listMessages = new _ns1__Z_USCORESSM_USCORELIST_USCOREMESSAGES();
-  _ns1__Z_USCORESSM_USCORELIST_USCOREMESSAGESResponse response;
+  
+  _ns1__Z_USCORESSM_USCORELIST_USCOREMESSAGESResponse *response;
   
   // Input parameters
-  listMessages->DATA = getTodayDateAsString();
+  //listMessages->DATA = getDateAsString(ptm);
   listMessages->DATA = "2016-04-01";
   
+  response = new _ns1__Z_USCORESSM_USCORELIST_USCOREMESSAGESResponse;
+  
   // SOAP call
-  if ( ssmProxy.Z_USCORESSM_USCORELIST_USCOREMESSAGES(listMessages, response) == SOAP_OK )
+  if ( ssmProxy.Z_USCORESSM_USCORELIST_USCOREMESSAGES(listMessages, *response) == SOAP_OK )
     std::cout << "OK" << std::endl;
   else
+    // XXX I still need to handle this error
     ssmProxy.soap_stream_fault(std::cerr);
   ssmProxy.destroy();
-  
+
+  return response;
 }
 
 //--------------------------------------------------------------
-std::string SSMClient::getTodayDateAsString() {
+std::string SSMClient::getDateAsString(struct tm *ptm) {
   
   time_t rawtime;
-  struct tm *ptm;
   
   time (&rawtime);
   ptm = gmtime ( &rawtime );

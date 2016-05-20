@@ -1,12 +1,12 @@
 #pragma once
 
 #include "ofMain.h"
-#include "SSMClient.hpp"
+#include "DataFetcher.hpp"
 
 class ofApp : public ofBaseApp{
 
   private:
-    SSMClient *ssmClient;
+    DataFetcher *dataFetcher;
 	
   public:
 		void setup();
