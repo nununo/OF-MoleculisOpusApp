@@ -15,6 +15,8 @@
 		7DD822401C9C8CFC0095581B /* stdsoap2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DD8223E1C9C8CFC0095581B /* stdsoap2.cpp */; };
 		7DD822431C9C8EE30095581B /* soapzssm_USCORElistmessagesProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DD822421C9C8EE30095581B /* soapzssm_USCORElistmessagesProxy.cpp */; };
 		7DD822461C9C8F260095581B /* soapC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DD822441C9C8F260095581B /* soapC.cpp */; };
+		7DE6D29B1CEF6BE700BE0640 /* SSMDataFetcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DE6D2991CEF6BE700BE0640 /* SSMDataFetcher.cpp */; };
+		7DE6D29E1CEF6CD100BE0640 /* TheData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DE6D29C1CEF6CD100BE0640 /* TheData.cpp */; };
 		7F8CE38CEA7B29A08FB87974 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7876E8AE07A41B33AD46E /* tinyxml.cpp */; };
 		8E4803896B3157AE8ADCB02E /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC825A4168A0DF78F0ACE6A7 /* tinyxmlerror.cpp */; };
 		A0DD88127445464D69B7224E /* ofxGuiGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7CE452C77AF7B96205848C7E /* ofxGuiGroup.cpp */; };
@@ -79,6 +81,11 @@
 		7DD822421C9C8EE30095581B /* soapzssm_USCORElistmessagesProxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = soapzssm_USCORElistmessagesProxy.cpp; path = src/gSOAP/soapzssm_USCORElistmessagesProxy.cpp; sourceTree = "<group>"; };
 		7DD822441C9C8F260095581B /* soapC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = soapC.cpp; path = src/gSOAP/soapC.cpp; sourceTree = "<group>"; };
 		7DD822451C9C8F260095581B /* soapH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = soapH.h; path = src/gSOAP/soapH.h; sourceTree = "<group>"; };
+		7DE6D2971CEF6AB300BE0640 /* DataFetcher.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DataFetcher.hpp; sourceTree = "<group>"; };
+		7DE6D2991CEF6BE700BE0640 /* SSMDataFetcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SSMDataFetcher.cpp; sourceTree = "<group>"; };
+		7DE6D29A1CEF6BE700BE0640 /* SSMDataFetcher.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SSMDataFetcher.hpp; sourceTree = "<group>"; };
+		7DE6D29C1CEF6CD100BE0640 /* TheData.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TheData.cpp; sourceTree = "<group>"; };
+		7DE6D29D1CEF6CD100BE0640 /* TheData.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TheData.hpp; sourceTree = "<group>"; };
 		8FC228FDBD8EBDF3566FFA28 /* ofxLabel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxLabel.h; path = ../../of_v0.9.3_osx_release/addons/ofxGui/src/ofxLabel.h; sourceTree = SOURCE_ROOT; };
 		9DB506652351C4E71E488395 /* tinyxml.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = tinyxml.h; path = ../../of_v0.9.3_osx_release/addons/ofxXmlSettings/libs/tinyxml.h; sourceTree = SOURCE_ROOT; };
 		A03571044EBB2DB95F16A0C2 /* ofxBaseGui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxBaseGui.cpp; path = ../../of_v0.9.3_osx_release/addons/ofxGui/src/ofxBaseGui.cpp; sourceTree = SOURCE_ROOT; };
@@ -242,8 +249,13 @@
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+				7DE6D2971CEF6AB300BE0640 /* DataFetcher.hpp */,
 				7DD822381C9C8A350095581B /* SSMClient.cpp */,
 				7DD822391C9C8A350095581B /* SSMClient.hpp */,
+				7DE6D2991CEF6BE700BE0640 /* SSMDataFetcher.cpp */,
+				7DE6D29A1CEF6BE700BE0640 /* SSMDataFetcher.hpp */,
+				7DE6D29C1CEF6CD100BE0640 /* TheData.cpp */,
+				7DE6D29D1CEF6CD100BE0640 /* TheData.hpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -362,6 +374,8 @@
 				7F8CE38CEA7B29A08FB87974 /* tinyxml.cpp in Sources */,
 				8E4803896B3157AE8ADCB02E /* tinyxmlerror.cpp in Sources */,
 				51311032AF6D46EB9144F0C7 /* tinyxmlparser.cpp in Sources */,
+				7DE6D29B1CEF6BE700BE0640 /* SSMDataFetcher.cpp in Sources */,
+				7DE6D29E1CEF6CD100BE0640 /* TheData.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
