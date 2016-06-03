@@ -9,8 +9,6 @@
 #ifndef BacteriaFamily_hpp
 #define BacteriaFamily_hpp
 
-using namespace std;
-
 #include "Bacteria.hpp"
 
 class BacteriaFamily {
