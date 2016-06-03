@@ -14,7 +14,8 @@
 		7DBCDCD91D01E09D00C44CF0 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DBCDCD71D01E09D00C44CF0 /* Particle.cpp */; };
 		7DBCDCE31D01E3B900C44CF0 /* InkColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DBCDCE11D01E3B900C44CF0 /* InkColor.cpp */; };
 		7DBCDCE61D01E3C200C44CF0 /* InkImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DBCDCE41D01E3C200C44CF0 /* InkImage.cpp */; };
-		7DBCDCEA1D01EF8E00C44CF0 /* Molecule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DBCDCE81D01EF8E00C44CF0 /* Molecule.cpp */; };
+		7DBCDCEA1D01EF8E00C44CF0 /* Bacteria.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DBCDCE81D01EF8E00C44CF0 /* Bacteria.cpp */; };
+		7DBCDCEE1D01F4C400C44CF0 /* BacteriaFamily.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DBCDCEC1D01F4C400C44CF0 /* BacteriaFamily.cpp */; };
 		7DD8223A1C9C8A350095581B /* SSMClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DD822381C9C8A350095581B /* SSMClient.cpp */; };
 		7DD822401C9C8CFC0095581B /* stdsoap2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DD8223E1C9C8CFC0095581B /* stdsoap2.cpp */; };
 		7DD822431C9C8EE30095581B /* soapzssm_USCORElistmessagesProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DD822421C9C8EE30095581B /* soapzssm_USCORElistmessagesProxy.cpp */; };
@@ -82,9 +83,11 @@
 		7DBCDCE41D01E3C200C44CF0 /* InkImage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InkImage.cpp; sourceTree = "<group>"; };
 		7DBCDCE51D01E3C200C44CF0 /* InkImage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = InkImage.hpp; sourceTree = "<group>"; };
 		7DBCDCE71D01E4D400C44CF0 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		7DBCDCE81D01EF8E00C44CF0 /* Molecule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Molecule.cpp; sourceTree = "<group>"; };
-		7DBCDCE91D01EF8E00C44CF0 /* Molecule.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Molecule.hpp; sourceTree = "<group>"; };
+		7DBCDCE81D01EF8E00C44CF0 /* Bacteria.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bacteria.cpp; sourceTree = "<group>"; };
+		7DBCDCE91D01EF8E00C44CF0 /* Bacteria.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Bacteria.hpp; sourceTree = "<group>"; };
 		7DBCDCEB1D01F0CB00C44CF0 /* Ink.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Ink.hpp; sourceTree = "<group>"; };
+		7DBCDCEC1D01F4C400C44CF0 /* BacteriaFamily.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BacteriaFamily.cpp; sourceTree = "<group>"; };
+		7DBCDCED1D01F4C400C44CF0 /* BacteriaFamily.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BacteriaFamily.hpp; sourceTree = "<group>"; };
 		7DCFFC761C9DC1BD007D814B /* run.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = run.sh; path = src/gSOAP/run.sh; sourceTree = "<group>"; };
 		7DD822381C9C8A350095581B /* SSMClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SSMClient.cpp; sourceTree = "<group>"; };
 		7DD822391C9C8A350095581B /* SSMClient.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SSMClient.hpp; sourceTree = "<group>"; };
@@ -293,9 +296,11 @@
 				7DBCDCE41D01E3C200C44CF0 /* InkImage.cpp */,
 				7DBCDCE51D01E3C200C44CF0 /* InkImage.hpp */,
 				7DBCDCE71D01E4D400C44CF0 /* Constants.h */,
-				7DBCDCE81D01EF8E00C44CF0 /* Molecule.cpp */,
-				7DBCDCE91D01EF8E00C44CF0 /* Molecule.hpp */,
+				7DBCDCE81D01EF8E00C44CF0 /* Bacteria.cpp */,
+				7DBCDCE91D01EF8E00C44CF0 /* Bacteria.hpp */,
 				7DBCDCEB1D01F0CB00C44CF0 /* Ink.hpp */,
+				7DBCDCEC1D01F4C400C44CF0 /* BacteriaFamily.cpp */,
+				7DBCDCED1D01F4C400C44CF0 /* BacteriaFamily.hpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -407,7 +412,8 @@
 				7DD822401C9C8CFC0095581B /* stdsoap2.cpp in Sources */,
 				A0DD88127445464D69B7224E /* ofxGuiGroup.cpp in Sources */,
 				7DBCDCD91D01E09D00C44CF0 /* Particle.cpp in Sources */,
-				7DBCDCEA1D01EF8E00C44CF0 /* Molecule.cpp in Sources */,
+				7DBCDCEA1D01EF8E00C44CF0 /* Bacteria.cpp in Sources */,
+				7DBCDCEE1D01F4C400C44CF0 /* BacteriaFamily.cpp in Sources */,
 				F339AB5F62C370C58449E370 /* ofxLabel.cpp in Sources */,
 				78263DB7A06E5E0226C873CE /* ofxPanel.cpp in Sources */,
 				7DD822461C9C8F260095581B /* soapC.cpp in Sources */,

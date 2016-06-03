@@ -1,12 +1,12 @@
 //
-//  Molecule.cpp
+//  Bacteria.cpp
 //  MoleculisOpusApp
 //
 //  Created by Nuno on 03/06/16.
 //
 //
 
-#include "Molecule.hpp"
+#include "Bacteria.hpp"
 #include "Constants.h"
 
 //--------------------------------------------------------------

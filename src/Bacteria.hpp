@@ -1,13 +1,13 @@
 //
-//  Molecule.hpp
+//  Bacteria.hpp
 //  MoleculisOpusApp
 //
 //  Created by Nuno on 03/06/16.
 //
 //
 
-#ifndef Molecule_hpp
-#define Molecule_hpp
+#ifndef Bacteria_hpp
+#define Bacteria_hpp
 
 #include "Particle.hpp"
 #include <list>
@@ -32,4 +32,4 @@ private:
   void init();
 };
 
-#endif /* Molecule_hpp */
+#endif /* Bacteria_hpp */
