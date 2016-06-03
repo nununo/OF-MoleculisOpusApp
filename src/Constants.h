@@ -24,4 +24,6 @@
 
 #define PIXEL_TRANSPARENCY 5
 
+#define IMAGE_FOLDER "/Users/nununo/Documents/OF/apps/ROFF/data/"
+
 #endif /* Constants_h */

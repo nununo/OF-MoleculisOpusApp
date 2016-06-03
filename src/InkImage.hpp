@@ -9,18 +9,18 @@
 #ifndef InkImage_hpp
 #define InkImage_hpp
 
+#include "ofMain.h"
 #include "Ink.hpp"
 
 class InkImage : Ink {
 
-  unsigned char *pixels;
-  uint xy2offset(uint x, uint y);
+  ofImage *image;
   
 public:
-  InkImage(unsigned char *pixels) {this->pixels = pixels;}
+  InkImage(ofImage *image) {this->image = image;}
 
 private:
-  ofColor getColor(ofPoint position);
+  ofColor getColor(ofPoint position) {return image->getColor(position.x, position.y);}
 };
 
 #endif /* InkImage_hpp */

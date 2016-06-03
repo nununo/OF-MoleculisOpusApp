@@ -17,6 +17,7 @@
 		7DBCDCEA1D01EF8E00C44CF0 /* Bacteria.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DBCDCE81D01EF8E00C44CF0 /* Bacteria.cpp */; };
 		7DBCDCEE1D01F4C400C44CF0 /* BacteriaFamily.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DBCDCEC1D01F4C400C44CF0 /* BacteriaFamily.cpp */; };
 		7DBCDCF11D01F83300C44CF0 /* PetriDish.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DBCDCEF1D01F83300C44CF0 /* PetriDish.cpp */; };
+		7DBCDCF61D02052C00C44CF0 /* ImageManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DBCDCF41D02052C00C44CF0 /* ImageManager.cpp */; };
 		7DD8223A1C9C8A350095581B /* SSMClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DD822381C9C8A350095581B /* SSMClient.cpp */; };
 		7DD822401C9C8CFC0095581B /* stdsoap2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DD8223E1C9C8CFC0095581B /* stdsoap2.cpp */; };
 		7DD822431C9C8EE30095581B /* soapzssm_USCORElistmessagesProxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7DD822421C9C8EE30095581B /* soapzssm_USCORElistmessagesProxy.cpp */; };
@@ -91,6 +92,8 @@
 		7DBCDCED1D01F4C400C44CF0 /* BacteriaFamily.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BacteriaFamily.hpp; sourceTree = "<group>"; };
 		7DBCDCEF1D01F83300C44CF0 /* PetriDish.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PetriDish.cpp; sourceTree = "<group>"; };
 		7DBCDCF01D01F83300C44CF0 /* PetriDish.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PetriDish.hpp; sourceTree = "<group>"; };
+		7DBCDCF41D02052C00C44CF0 /* ImageManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImageManager.cpp; sourceTree = "<group>"; };
+		7DBCDCF51D02052C00C44CF0 /* ImageManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ImageManager.hpp; sourceTree = "<group>"; };
 		7DCFFC761C9DC1BD007D814B /* run.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = run.sh; path = src/gSOAP/run.sh; sourceTree = "<group>"; };
 		7DD822381C9C8A350095581B /* SSMClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SSMClient.cpp; sourceTree = "<group>"; };
 		7DD822391C9C8A350095581B /* SSMClient.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SSMClient.hpp; sourceTree = "<group>"; };
@@ -218,7 +221,6 @@
 				7DBCDCE21D01E3B900C44CF0 /* InkColor.hpp */,
 				7DBCDCE41D01E3C200C44CF0 /* InkImage.cpp */,
 				7DBCDCE51D01E3C200C44CF0 /* InkImage.hpp */,
-				7DBCDCE71D01E4D400C44CF0 /* Constants.h */,
 				7DBCDCE81D01EF8E00C44CF0 /* Bacteria.cpp */,
 				7DBCDCE91D01EF8E00C44CF0 /* Bacteria.hpp */,
 				7DBCDCEB1D01F0CB00C44CF0 /* Ink.hpp */,
@@ -228,6 +230,15 @@
 				7DBCDCF01D01F83300C44CF0 /* PetriDish.hpp */,
 			);
 			name = particles;
+			sourceTree = "<group>";
+		};
+		7DBCDCF31D02051A00C44CF0 /* imageManager */ = {
+			isa = PBXGroup;
+			children = (
+				7DBCDCF41D02052C00C44CF0 /* ImageManager.cpp */,
+				7DBCDCF51D02052C00C44CF0 /* ImageManager.hpp */,
+			);
+			name = imageManager;
 			sourceTree = "<group>";
 		};
 		7DCFFC751C9DC1A1007D814B /* gSOAP */ = {
@@ -311,6 +322,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				7DBCDCE71D01E4D400C44CF0 /* Constants.h */,
+				7DBCDCF31D02051A00C44CF0 /* imageManager */,
 				7DBCDCD41D01DFE100C44CF0 /* app */,
 				7DBCDCD31D01DFC800C44CF0 /* dataFetch */,
 				7DBCDCF21D01F9D100C44CF0 /* particles */,
@@ -417,6 +430,7 @@
 				7DD8223A1C9C8A350095581B /* SSMClient.cpp in Sources */,
 				7DBCDCE31D01E3B900C44CF0 /* InkColor.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				7DBCDCF61D02052C00C44CF0 /* ImageManager.cpp in Sources */,
 				7DBCDCE61D01E3C200C44CF0 /* InkImage.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				7DD822431C9C8EE30095581B /* soapzssm_USCORElistmessagesProxy.cpp in Sources */,
