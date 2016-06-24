@@ -17,7 +17,7 @@ class PetriDish {
   std::map<string, BacteriaFamily> mFamilies;
   
 public:
-  PetriDish();
+  PetriDish() {};
   void update();
   void draw();
   void addFamily(string familyName, int familyTargetSize, int maxBacteriaSize, Ink *ink);

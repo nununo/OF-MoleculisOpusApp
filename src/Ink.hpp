@@ -1,6 +1,6 @@
 //
 //  Ink.h
-//  MoleculisOpusApp
+//  BateriaeOpusApp
 //
 //  Created by Nuno on 03/06/16.
 //

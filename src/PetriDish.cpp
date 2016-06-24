@@ -9,10 +9,6 @@
 #include "PetriDish.hpp"
 
 //--------------------------------------------------------------
-PetriDish::PetriDish() {
-}
-
-//--------------------------------------------------------------
 void PetriDish::reset() {
   for( map<string, BacteriaFamily>::iterator f = mFamilies.begin(); f != mFamilies.end(); ++f ) {
     f->second.reset();

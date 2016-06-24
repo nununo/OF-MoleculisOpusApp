@@ -2,6 +2,7 @@
 
 #include "TheData.hpp"
 #include "SSMDataFetcher.hpp"
+#include "InkImage.hpp"
 
 //--------------------------------------------------------------
 void ofApp::setup(){
@@ -11,17 +12,14 @@ void ofApp::setup(){
   dataFetcher = new SSMDataFetcher(devSoapEndpoint,
                             "OUTSYSTEMS",
                             "systemsout");
+
+  imageManager = new ImageManager();
+  
+  petriDish.addFamily("1", 100, 100, new InkImage(imageManager->getImage(0)));
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-  time_t rawtime;
-  struct tm *ptm;
-  
-  time (&rawtime);
-  ptm = gmtime ( &rawtime );
-  
-  TheData *theData = dataFetcher->fetch(ptm);
 }
 
 //--------------------------------------------------------------
@@ -38,3 +36,15 @@ void ofApp::keyPressed(int key){
 void ofApp::windowResized(int w, int h){
   
 }
+
+//--------------------------------------------------------------
+TheData *ofApp::fetchTheData() {
+  time_t rawtime;
+  struct tm *ptm;
+  
+  time (&rawtime);
+  ptm = gmtime ( &rawtime );
+  
+  return dataFetcher->fetch(ptm);
+}
+

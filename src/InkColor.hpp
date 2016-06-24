@@ -12,14 +12,12 @@
 #include "Ink.hpp"
 
 class InkColor : Ink {
-  
+private:
   ofColor color;
-
-protected:
-  ofColor getColor(ofPoint position) {return color;}
 
 public:
   InkColor(ofColor color) {this->color = color;}
+  ofColor getColor(ofPoint position) {return color;}
 };
 
 #endif /* InkColor_hpp */
