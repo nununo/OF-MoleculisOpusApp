@@ -29,10 +29,6 @@ public:
   bool isDead() {return bDead;}
   void kill() {bDead = true;}
   void reset();
-  //	void setMaxBacteriaSize(int maxBacteriaSize) {this->maxBacteriaSize = maxBacteriaSize;}
-  //	int getMaxBacteriaSize() {return this->maxBacteriaSize;}
-  //	void setFamilyTargetSize(int familyTargetSize) {this->familyTargetSize = familyTargetSize;}
-  //	int getFamilyTargetSize() {return this->familyTargetSize;}
   
 private:
   void init(int familyTargetSize, int maxBacteriaSize);

@@ -11,8 +11,8 @@
 
 #define IMAGE_WIDTH 800
 #define IMAGE_HEIGHT 450
-#define OFFSET_WIDTH 300
-#define OFFSET_HEIGHT 100
+#define OFFSET_WIDTH 0
+#define OFFSET_HEIGHT 0
 
 #define BACTERIA_SIZE_MIN 2
 #define BACTERIA_SIZE_MAX 500
@@ -24,6 +24,6 @@
 
 #define PIXEL_TRANSPARENCY 5
 
-#define IMAGE_FOLDER "/Users/nununo/Documents/OF/apps/ROFF/data/"
+#define IMAGE_FOLDER "/Users/nununo/Documents/OF0.9/assets/"
 
 #endif /* Constants_h */

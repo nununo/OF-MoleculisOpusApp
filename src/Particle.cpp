@@ -44,7 +44,7 @@ void Particle::draw() {
     ofColor color = ink->getColor(this->position);
     ofEnableAlphaBlending();
     ofSetColor(color.r, color.g, color.b, PIXEL_TRANSPARENCY);
-    ofRectangle(position.x+OFFSET_WIDTH, position.y+OFFSET_HEIGHT, 1,1);
+    ofDrawRectangle(position.x+OFFSET_WIDTH, position.y+OFFSET_HEIGHT, 1,1);
     ofDisableAlphaBlending();
   }
 }

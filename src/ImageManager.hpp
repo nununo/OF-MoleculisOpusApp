@@ -22,6 +22,7 @@ private:
   void loadImages();
   
 public:
+  ImageManager() {loadImages();}
   int getImageCount() {return imageCount;}
   ofImage *getImage(int index) {return &myImages[index];}
 };
