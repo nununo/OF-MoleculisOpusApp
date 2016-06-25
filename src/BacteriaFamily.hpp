@@ -16,12 +16,13 @@ class BacteriaFamily {
   std::list<Bacteria> mBacterias;
   bool bDead;
   Ink *ink;
+  Configurator *configurator;
   
 public:
   int familyTargetSize;
   int maxBacteriaSize;
   
-  BacteriaFamily(int familyTargetSize, int maxBacteriaSize, Ink *ink);
+  BacteriaFamily(Ink *ink, Configurator *configurator, int familyTargetSize, int maxBacteriaSize);
   void update();
   void draw();
   int particleCount();

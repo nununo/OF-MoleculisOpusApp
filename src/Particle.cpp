@@ -10,8 +10,9 @@
 #include "Constants.h"
 
 /*--------------------------------------------------------------*/
-Particle::Particle(Ink *ink, ofPoint position) {
-  this->ink =ink;
+Particle::Particle(Ink *_ink, Configurator *_configurator, ofPoint position) {
+  this->ink =_ink;
+  this->configurator = _configurator;
   this->init(position);
 }
 
@@ -43,7 +44,7 @@ void Particle::draw() {
   if (!bDead) {
     ofColor color = ink->getColor(this->position);
     ofEnableAlphaBlending();
-    ofSetColor(color.r, color.g, color.b, PIXEL_TRANSPARENCY);
+    ofSetColor(color.r, color.g, color.b, configurator->getTransparency());
     ofDrawRectangle(position.x+OFFSET_WIDTH, position.y+OFFSET_HEIGHT, 1,1);
     ofDisableAlphaBlending();
   }

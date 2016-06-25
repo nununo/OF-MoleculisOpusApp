@@ -35,7 +35,7 @@ void PetriDish::draw() {
 
 //--------------------------------------------------------------
 void PetriDish::addFamily(string familyName, int familyTargetSize, int maxBacteriaSize, Ink *ink) {
-  mFamilies.insert(make_pair(familyName, BacteriaFamily(familyTargetSize, maxBacteriaSize, ink)));
+  mFamilies.insert(make_pair(familyName, BacteriaFamily(ink, configurator, familyTargetSize, maxBacteriaSize)));
   //mFamilies[familyName] = ;
 }
 

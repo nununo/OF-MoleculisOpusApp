@@ -10,8 +10,9 @@
 #include "Constants.h"
 
 //--------------------------------------------------------------
-BacteriaFamily::BacteriaFamily(int familyTargetSize, int maxBacteriaSize, Ink *ink) {
-  this->ink = ink;
+BacteriaFamily::BacteriaFamily(Ink *_ink, Configurator *_configurator, int maxBacteriaSize, int familyTargetSize) {
+  this->ink = _ink;
+  this->configurator = _configurator;
   this->init(familyTargetSize, maxBacteriaSize);
 }
 
@@ -39,7 +40,7 @@ void BacteriaFamily::addBacterias() {
     this->familyTargetSize = FAMILY_TARGET_SIZE_MAX;
   
   while (mBacterias.size() < this->familyTargetSize) {
-    mBacterias.push_back( Bacteria(this->ink, ofRandom(BACTERIA_SIZE_MIN, maxBacteriaSize)) );
+    mBacterias.push_back( Bacteria(this->ink, this->configurator, ofRandom(BACTERIA_SIZE_MIN, maxBacteriaSize)) );
   }
 }
 

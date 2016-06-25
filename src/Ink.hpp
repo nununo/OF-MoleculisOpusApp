@@ -13,10 +13,13 @@
 
 class Ink
 {
+  int transparency;
+  
 public:
-  Ink(){}
+  Ink(int _transparency){ transparency = _transparency;}
   virtual ~Ink(){}
   virtual ofColor getColor(ofPoint position)=0;
+  virtual int getTransparency() {return transparency;}
 };
 
 #endif /* Ink_hpp */

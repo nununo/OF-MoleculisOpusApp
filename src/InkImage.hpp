@@ -17,7 +17,7 @@ class InkImage : public Ink {
   ofImage *image;
   
 public:
-  InkImage(ofImage *image) {this->image = image;}
+  InkImage(ofImage *image, int _transparency) : Ink(_transparency) {this->image = image;}
   ofColor getColor(ofPoint position) {return image->getColor(position.x, position.y);}
 };
 

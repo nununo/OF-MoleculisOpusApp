@@ -10,6 +10,7 @@
 #define Bacteria_hpp
 
 #include "Particle.hpp"
+#include "Configurator.hpp"
 #include <list>
 
 using namespace std;
@@ -18,10 +19,11 @@ class Bacteria {
   
   std::list<Particle> mParticles;
   ofPoint position;
+  Configurator *configurator;
   bool bDead;
   
 public:
-  Bacteria(Ink *ink, int numParticles);
+  Bacteria(Ink *ink, Configurator *_configurator, int numParticles);
   void update();
   void draw();
   bool isDead() {return bDead;}

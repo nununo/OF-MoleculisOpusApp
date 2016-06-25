@@ -1,11 +1,8 @@
 #include "ofApp.h"
-
 #include "TheData.hpp"
 #include "SSMDataFetcher.hpp"
 #include "InkImage.hpp"
 #include "InkColor.hpp"
-
-
 #include "Constants.h"
 //--------------------------------------------------------------
 void ofApp::setup(){
@@ -13,16 +10,18 @@ void ofApp::setup(){
   const char prdSoapEndpoint[] = "http://servicedesk.roff.pt/sap/bc/srt/rfc/sap/zssm_list_messages/100/zssm_listmessages/zssm_listmessages";
   const char devSoapEndpoint[] = "http://servicedesk.roff.pt:3262/sap/bc/srt/rfc/sap/zssm_list_messages/100/zssm_listmessages/zssm_listmessages";
   
-  dataFetcher = new SSMDataFetcher(devSoapEndpoint,
-                            "OUTSYSTEMS",
-                            "systemsout");
-
-  imageManager = new ImageManager();
+  configurator = new Configurator("/Users/nununo/Documents/OF0.9/BacteriaeOpus/config.xml"/*getConfiguratorPath()*/);
+  imageManager = new ImageManager(configurator);
   
-  petriDish.addFamily("1", 100, 100, new InkImage(imageManager->getImage(0)));
+  dataFetcher = new SSMDataFetcher(devSoapEndpoint,
+                                   "OUTSYSTEMS",
+                                   "systemsout");
+  
+  petriDish = new PetriDish(configurator);
+  petriDish->addFamily("1", 100, 100, new InkImage(imageManager->getImage(0), configurator->getTransparency()));
   //petriDish.addFamily("preto", 100, 100, new InkColor(new ofColor(0,0,0)));
-
-  ofSetWindowShape(IMAGE_WIDTH, IMAGE_HEIGHT);
+  
+  ofSetWindowShape(configurator->getImageSize().x, configurator->getImageSize().y);
   
   // White background
   ofBackground(255, 255, 255);
@@ -31,12 +30,12 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
-  petriDish.update();
+  petriDish->update();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-  petriDish.draw();
+  petriDish->draw();
 }
 
 //--------------------------------------------------------------
@@ -59,4 +58,3 @@ TheData *ofApp::fetchTheData() {
   
   return dataFetcher->fetch(ptm);
 }
-

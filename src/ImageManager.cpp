@@ -16,12 +16,12 @@ void ImageManager::loadImages() {
   
   vector<string> files = vector<string>();
   
-  getFilesFromFolder(IMAGE_FOLDER, files);
+  getFilesFromFolder(configurator->getImageFolder(), files);
   imageCount = files.size();
   myImages = new ofImage[imageCount]();
   
   for(int i=0;i<imageCount;i++) {
-    myImages[i].load(IMAGE_FOLDER + files[i]);
+    myImages[i].load(configurator->getImageFolder() + files[i]);
   }
 }
 //--------------------------------------------------------------
